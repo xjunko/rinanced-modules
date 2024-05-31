@@ -1,4 +1,4 @@
-[Rinanced]
+[Youtube]
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 build-mode = "both"
 included-patches = "'Custom branding' 'Change header'"
