@@ -36,16 +36,3 @@ Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is schedu
  * Grab your modules and APKs from [releases](../../releases)
 
 also see here [`CONFIG.md`](./CONFIG.md)
-
-## Building Locally
-### On Termux
-```console
-bash <(curl -sSf https://raw.githubusercontent.com/j-hc/revanced-magisk-module/main/build-termux.sh)
-```
-
-### On Desktop
-```console
-$ git clone https://github.com/j-hc/revanced-magisk-module
-$ cd revanced-magisk-module
-$ ./build.sh
-```
