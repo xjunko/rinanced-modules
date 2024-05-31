@@ -1,6 +1,6 @@
-[Youtube]
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+[YouTube]
 build-mode = "both"
 included-patches = "'Custom branding' 'Change header'"
-
-
+version = "auto"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube" # fallback
