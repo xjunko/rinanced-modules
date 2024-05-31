@@ -31,8 +31,33 @@
       {
         "key": "lightThemeBackgroundColor",
         "value": "#FFFCCFF3"
+      },
+      {
+        "key": "DarkThemeBackgroundColor",
+        "value": "#FF290025"
+      },
+      {
+        "key": "LightThemeBackgroundColor",
+        "value": "#FFFCCFF3"
+      }
+    ]
+  },
+  {
+    "patchName": "Custom branding icon YouTube",
+    "options": [
+      {
+        "key": "AppIcon",
+        "value": "./rina/custom-branding/"
+      }
+    ]
+  },
+  {
+    "patchName": "Custom branding name YouTube",
+    "options": [
+      {
+        "key": "AppName",
+        "value": "RinaTube Extended"
       }
     ]
   }
 ]
-        
