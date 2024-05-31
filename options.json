@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "patchName": "Custom branding",
+    "options": [
+      {
+        "key": "appName",
+        "value": "RinaTube"
+      },
+      {
+        "key": "iconPath",
+        "value": "./rina/custom-branding/"
+      }
+    ]
+  },
+  {
+    "patchName": "Change header",
+    "options": [
+      {
+        "key": "header",
+        "value": "./rina/change-header/"
+      }
+    ]
+  },
+  {
+    "patchName": "Theme",
+    "options": [
+      {
+        "key": "darkThemeBackgroundColor",
+        "value": "#FF290025"
+      },
+      {
+        "key": "lightThemeBackgroundColor",
+        "value": "#FFFCCFF3"
+      }
+    ]
+  }
+]
+        
