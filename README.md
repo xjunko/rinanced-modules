@@ -1,11 +1,10 @@
-<div style="float: right; text-align: center;">
-    <div>
-         <img width="200" align="right" style="float: right; margin: 0 10px 0 0;z-index:999" alt="RinaLogo" src="https://hatsune-miku.has.rocks/r/rina-looking-down-on-you.jpg">
-    </div>
-</div>
+# ReVanced Magisk Module
+[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rvc_magisk)
+[![CI](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml)
 
-# Rinanced YouTube Module
-Get the [latest CI release](https://github.com/xjunko/rinanced-modules/releases).
+Extensive ReVanced builder  
+
+Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
 
 Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music from Play Store if you are using magisk modules. 
 
@@ -36,3 +35,16 @@ Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is schedu
  * Grab your modules and APKs from [releases](../../releases)
 
 also see here [`CONFIG.md`](./CONFIG.md)
+
+## Building Locally
+### On Termux
+```console
+bash <(curl -sSf https://raw.githubusercontent.com/j-hc/revanced-magisk-module/main/build-termux.sh)
+```
+
+### On Desktop
+```console
+$ git clone https://github.com/j-hc/revanced-magisk-module
+$ cd revanced-magisk-module
+$ ./build.sh
+```
