@@ -3,8 +3,7 @@ parallel-jobs = 1
 
 [YouTube]
 build-mode = "both"
-included-patches = "'Custom branding' 'Change header'"
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-patcher-args = "-OappName=RinaTube -OiconPath=./rina/custom-branding/ -Oheader=./rina/change-header/ -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' "
+patcher-args = "-e 'Custom branding' -OappName='RinaTube' -OiconPath=./rina/custom-branding/ -e 'Change header' -Oheader=./rina/change-header/ -e 'Theme' -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' "
