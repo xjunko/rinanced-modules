@@ -2,25 +2,10 @@ enable-magisk-update = true
 logging-to-file = true
 parallel-jobs = 1
 
-[YouTube]
-enabled = false
-build-mode = "apk"
-module-prop-name = "youtube-rina"
-excluded-patches = ""
-included-patches = ""
-patcher-args = """\
-    -e 'Change header' -Ocustom=rina/change-header/ \
-    -e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon=rina/custom-branding/ \
-    -e 'Theme' -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' \
-    """
-version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-
 [Youtube-Rina]
 enabled = false
 build-mode = "apk"
-module-prop-name = "youtube-rina-custom"
+module-prop-name = "youtube-rina"
 exclusive-patches = true
 excluded-patches = ""
 included-patches = """\
