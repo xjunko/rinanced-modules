@@ -1,10 +1,50 @@
 enable-magisk-update = true
-parallel-jobs = 2
-remove-rv-integrations-checks = false
+logging-to-file = true
+parallel-jobs = 1
 
 [YouTube]
-build-mode = "both"
+enabled = false
+build-mode = "apk"
+module-prop-name = "youtube-rina"
+excluded-patches = ""
+included-patches = ""
+patcher-args = """\
+    -e 'Change header' -Ocustom=rina/change-header/ \
+    -e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon=rina/custom-branding/ \
+    -e 'Theme' -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' \
+    """
 version = "auto"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-patcher-args = "-e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon='./rina/custom-branding/' -e 'Change header' -Ocustom='./rina/change-header/' -e 'Theme' -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' "
+
+[Youtube-Rina]
+enabled = false
+build-mode = "apk"
+module-prop-name = "youtube-rina-custom"
+exclusive-patches = true
+excluded-patches = ""
+included-patches = """\
+    'Custom branding' 'Seekbar' 'Remove background playback restrictions' \
+    'Video ads' 'Hide ads' 'Video Quality' 'Theme' 'Change form factor' \
+    'Return Youtube Dislike' 'Miniplayer' 'SponsorBlock' \
+    """
+patcher-args = """\
+    -e 'Change header' -Ocustom=rina/change-header/ \
+    -e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon=rina/custom-branding/ \
+    -e 'Theme' -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' \
+    """
+version = "auto"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+
+[YouTube-Rina-Extended]
+enabled = true
+app-name = "Youtube"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "RinaEX"
+build-mode = "apk"
+module-prop-name = "youtube-rina-ex"
+included-patches = "'Custom header for YouTube'"
+patcher-args = "--legacy-options options/extended/config.json"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"

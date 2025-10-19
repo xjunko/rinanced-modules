@@ -1,0 +1,50 @@
+[
+    {
+        "patchName": "Custom branding icon for YouTube",
+        "options": [
+            {
+                "key": "appIcon",
+                "value": "./rina/custom-branding/"
+            },
+            {
+                "key": "changeSplashIcon",
+                "value": true
+            },
+            {
+                "key": "restoreOldSplashAnimation",
+                "value": true
+            }
+        ]
+    },
+    {
+        "patchName": "Custom branding name for YouTube",
+        "options": [
+            {
+                "key": "appName",
+                "value": "RinaTube"
+            }
+        ]
+    },
+    {
+        "patchName": "Custom header for YouTube",
+        "options": [
+            {
+                "key": "customHeader",
+                "value": "./rina/change-header/"
+            }
+        ]
+    },
+    {
+        "patchName": "Theme",
+        "options": [
+            {
+                "key": "darkThemeBackgroundColor",
+                "value": "#FF290025"
+            },
+            {
+                "key": "lightThemeBackgroundColor",
+                "value": "#FFFCCFF3"
+            }
+        ]
+    }
+]
