@@ -1,0 +1,50 @@
+[
+    {
+        "patchName": "Custom branding icon for YouTube",
+        "options": [
+            {
+                "key": "appIcon",
+                "value": "./assets/miku/icon/"
+            },
+            {
+                "key": "changeSplashIcon",
+                "value": true
+            },
+            {
+                "key": "restoreOldSplashAnimation",
+                "value": true
+            }
+        ]
+    },
+    {
+        "patchName": "Custom branding name for YouTube",
+        "options": [
+            {
+                "key": "appName",
+                "value": "MikuTube"
+            }
+        ]
+    },
+    {
+        "patchName": "Custom header for YouTube",
+        "options": [
+            {
+                "key": "customHeader",
+                "value": "./assets/miku/header/"
+            }
+        ]
+    },
+    {
+        "patchName": "Theme",
+        "options": [
+            {
+                "key": "darkThemeBackgroundColor",
+                "value": "#FF001E1C"
+            },
+            {
+                "key": "lightThemeBackgroundColor",
+                "value": "#FFB8FFFA"
+            }
+        ]
+    }
+]

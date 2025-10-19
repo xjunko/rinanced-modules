@@ -33,3 +33,15 @@ module-prop-name = "youtube-rina-ex"
 included-patches = "'Custom header for YouTube'"
 patcher-args = "--legacy-options assets/rina/patches.json"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+
+[YouTube-Miku-Extended]
+enabled = true
+app-name = "Youtube"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "MikuEX"
+build-mode = "apk"
+module-prop-name = "youtube-miku-ex"
+included-patches = "'Custom header for YouTube'"
+patcher-args = "--legacy-options assets/miku/patches.json"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
