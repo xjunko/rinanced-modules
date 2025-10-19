@@ -15,7 +15,7 @@ included-patches = """\
     """
 patcher-args = """\
     -e 'Change header' -Ocustom=./assets/rina/header/ \
-    -e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon=./assets/rina/custom-branding/ \
+    -e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon=./assets/rina/icon/ \
     -e 'Theme' -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' \
     """
 version = "auto"
