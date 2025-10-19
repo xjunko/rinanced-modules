@@ -14,7 +14,7 @@ included-patches = """\
     'Return Youtube Dislike' 'Miniplayer' 'SponsorBlock' \
     """
 patcher-args = """\
-    -e 'Change header' -Ocustom=./assets/rina/change-header/ \
+    -e 'Change header' -Ocustom=./assets/rina/header/ \
     -e 'Custom branding' -OcustomName='RinaTube' -OcustomIcon=./assets/rina/custom-branding/ \
     -e 'Theme' -OdarkThemeBackgroundColor='#FF290025' -OlightThemeBackgroundColor='#FFFCCFF3' \
     """

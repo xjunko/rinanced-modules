@@ -30,7 +30,7 @@
         "options": [
             {
                 "key": "customHeader",
-                "value": "./assets/rina/change-header/"
+                "value": "./assets/rina/header/"
             }
         ]
     },
