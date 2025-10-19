@@ -28,8 +28,12 @@ cli-version = "v5.0.0"       # 'latest', 'dev', or a version number. default: "l
 [Some-App]
 app-name = "SomeApp" # if set, release name becomes SomeApp instead of Some-App. default is same as table name, which is 'Some-App' here.
 enabled = true       # whether to build the app. default: true
-version = "auto"     # 'auto', 'latest', 'beta' or a version number (e.g. '17.40.41'). default: auto
 build-mode = "apk"   # 'both', 'apk' or 'module'. default: apk
+
+# 'auto' option gets the latest possible version supported by all the included patches
+# 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
+# whitespace seperated list of patches to exclude. default: ""
+version = "auto"     # 'auto', 'latest', 'beta' or a version number (e.g. '17.40.41'). default: auto
 
 # optional args to be passed to cli. can be used to set patch options
 # multiline strings in the config is supported
@@ -38,9 +42,6 @@ patcher-args = """\
   -Oanother-option=value \
   """
 
-# 'auto' option gets the latest possible version supported by all the included patches
-# 'latest' gets the latest stable without checking patches support. 'beta' gets the latest beta/alpha
-# whitespace seperated list of patches to exclude. default: ""
 excluded-patches = """\
   'Some Patch' \
   'Some Other Patch' \
@@ -52,7 +53,7 @@ exclusive-patches = false                                  # exclude all patches
 apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 module-prop-name = "some-app-magisk"                       # magisk module prop name.
-apkmirror-dpi = "360-480dpi"                               # used to select apk variant from apkmirror. default: nodpi
+dpi = "360-480dpi"                               # used to select apk variant from apkmirror. default: nodpi
 arch = "arm64-v8a"                                         # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
 riplib = true                                              # enables ripping x86 and x86_64 libs from apks with j-hc revanced cli. default: true
 

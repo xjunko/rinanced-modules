@@ -4,7 +4,7 @@
         "options": [
             {
                 "key": "appIcon",
-                "value": "./rina/custom-branding/"
+                "value": "./assets/rina/custom-branding/"
             },
             {
                 "key": "changeSplashIcon",
@@ -30,7 +30,7 @@
         "options": [
             {
                 "key": "customHeader",
-                "value": "./rina/change-header/"
+                "value": "./assets/rina/change-header/"
             }
         ]
     },
