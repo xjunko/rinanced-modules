@@ -4,7 +4,7 @@ parallel-jobs = 1
 
 [Youtube-Rina]
 enabled = false
-build-mode = "apk"
+build-mode = "both"
 module-prop-name = "youtube-rina"
 exclusive-patches = true
 excluded-patches = ""
@@ -28,7 +28,7 @@ app-name = "Youtube"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "RinaEX"
-build-mode = "apk"
+build-mode = "both"
 module-prop-name = "youtube-rina-ex"
 included-patches = "'Custom header for YouTube'"
 patcher-args = "--legacy-options assets/rina/patches.json"
@@ -40,7 +40,7 @@ app-name = "Youtube"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "MikuEX"
-build-mode = "apk"
+build-mode = "both"
 module-prop-name = "youtube-miku-ex"
 included-patches = "'Custom header for YouTube'"
 patcher-args = "--legacy-options assets/miku/patches.json"
